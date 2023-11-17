@@ -1,0 +1,8 @@
+<each loop="item in {{ list }}">
+    <button class="btn__no__color">
+        <figure class="btn__no__color-image">
+            <img src="../assets/icon/{{ item.linkIcon }}.svg" alt="{{ item.linkDesc }}">
+        </figure>
+        <p class="btn__no__color__content">{{ item.content }}</p>
+    </button>
+</each>

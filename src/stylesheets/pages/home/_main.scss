@@ -1,0 +1,5 @@
+@use "abstracts/" as *;
+
+body {
+    @include bg-color($background-darkmode)
+}
