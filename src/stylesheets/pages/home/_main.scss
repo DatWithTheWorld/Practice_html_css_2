@@ -3,3 +3,6 @@
 body {
     @include bg-color($background-darkmode)
 }
+.container{
+    padding: 0 8%;
+}
