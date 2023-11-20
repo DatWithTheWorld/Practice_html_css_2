@@ -1,0 +1,29 @@
+<each loop="item in {{ list }}">
+    <article class="{{ item.className }}">
+            <div class="content">
+                <div class="content__area">
+                    <p class="content__first__line">{{ item.firstLine }}</p>
+                    <h1 class="content__secondary__line-h1">{{ item.secondaryLine }}</h1>
+                    <h3 class="content__secondary__line-h3">{{ item.secondaryLines }}</h3>
+                    <p class="content__third__line">{{ item.thirdLine }}</p>
+                </div>
+            <div class="content__button">
+                <include src="./components/button.html" locals='{
+                    "list":["{{ item.buttonFirst }}"]
+                }'>
+                    
+                </include>
+            <include src="./components/buttonnocl.html" locals='{
+                "list":[{"linkIcon":"{{ item.buttonSecondaryLink }}","content":"{{ item.buttonSecondary }}"}]
+            }'>
+                
+            </include>
+            </div>
+            </div>
+            <picture class="image">
+                <source class="image__img" media="(min-width:1200px)" srcset="../assets/img/{{ item.imageLink1 }}.png" alt="{{ item.imageDesc1 }}"/>
+                <source class="image__img" media="(min-width:429px)" srcset="../assets/img/{{ item.imageLink2 }}.png" alt="{{ item.imageDesc2 }}"/>
+                <img class="image__img" src="../assets/img/{{ item.imageLink3 }}.png" alt="{{ item.imageDesc3 }}" />
+            </picture>
+        </article>
+    </each>
