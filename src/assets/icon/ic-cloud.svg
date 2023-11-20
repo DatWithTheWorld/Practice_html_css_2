@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="-loud-storage-download 1" clip-path="url(#clip0_8_9070)">
+<g id="Group">
+<path id="Vector" d="M16.8639 24.1815C10.3599 25.0695 5.33325 30.5868 5.33325 37.3335C5.33325 44.6962 11.3039 50.6668 18.6666 50.6668H47.9999C53.8906 50.6668 58.6666 45.8908 58.6666 40.0002C58.6666 34.1095 53.8906 29.3335 47.9999 29.3335C47.9999 20.4962 40.8373 13.3335 31.9999 13.3335C24.9679 13.3335 19.0106 17.8748 16.8639 24.1815Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M37.7769 35.5533L31.9983 41.332L26.2196 35.5533" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M32 28V41.3333" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_8_9070">
+<rect width="64" height="64" fill="white"/>
+</clipPath>
+</defs>
+</svg>
