@@ -2,6 +2,7 @@
 @use './variables' as *;
 
 @mixin border($border-radius:false,$border:false){
+
     @if $border-radius != false{
         border-radius: $border-radius;
     }
@@ -37,6 +38,7 @@
       }
 }
 @mixin font($font-family:false,$font-size:false,$font-weight:false,$font-style:false,$line-height:false){
+
 @if ($font-family != false) {
    font-family:$font-family;
 }
@@ -48,6 +50,7 @@
     font-weight: $font-weight;
 }
 font-style: normal;
+
 
 @if $line-height{
     line-height: $line-height;

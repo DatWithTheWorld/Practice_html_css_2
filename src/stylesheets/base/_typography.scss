@@ -8,6 +8,11 @@
     font-family: InterRegular;
     src: url(../assets/fonts/Inter-Regular.ttf) format("truetype");
 }
+
+@font-face {
+    font-family: PoppinsRegular;
+    src: url(../assets/fonts/Poppins-Regular.ttf) format("truetype");
+}
 body {
     font-family: $primary-font;
     font-weight: 400;

@@ -1,5 +1,5 @@
 <each loop="item in {{ list }}">
-    <article class="{{ item.className }}">
+    <article class="box-item">
             <div class="content">
                 <div class="content__area">
                     <p class="content__first__line">{{ item.firstLine }}</p>
@@ -20,10 +20,11 @@
             </include>
             </div>
             </div>
-            <picture class="image">
-                <source class="image__img" media="(min-width:1200px)" srcset="../assets/img/{{ item.imageLink1 }}.png" alt="{{ item.imageDesc1 }}"/>
-                <source class="image__img" media="(min-width:429px)" srcset="../assets/img/{{ item.imageLink2 }}.png" alt="{{ item.imageDesc2 }}"/>
-                <img class="image__img" src="../assets/img/{{ item.imageLink3 }}.png" alt="{{ item.imageDesc3 }}" />
-            </picture>
+
+            <figure class="image">
+                <img class="image__img" src="../assets/img/{{ item.imageLink1 }}.png" alt="{{ item.imageDesc1 }}"/>
+                <img class="image__img" src="../assets/img/{{ item.imageLink2 }}.png" alt="{{ item.imageDesc2 }}"/>
+                <img class="image__img" src="../assets/img/{{ item.imageLink3 }}.png" alt="{{ item.imageDesc3 }}">
+            </figure>
         </article>
     </each>

@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+
+.btn__no__color{
+    @include flex();
+    gap: 10px;
+    opacity: 0.75;
+    @include color($background:$background-darkmode,$color:$text-color-secondary);
+    border: 2px solid $text-color-secondary;
+    padding: 7% 10%;
+    border-radius: 16px;
+    text-wrap: nowrap;
+    @include font($font-family:$secondary-font,$font-size:pxToRem(16),$line-height:24px,$font-weight:700);
+    &:hover{
+        @include color($background:$active-element-color);
+    }
+}
