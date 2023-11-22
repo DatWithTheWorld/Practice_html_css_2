@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+
+.btn{
+    @include color($background:$active-element-color);
+    padding: 7% 15%;
+    border: none;
+    border-radius: 16px;
+    text-wrap: nowrap;
+    @include color($color:$text-color-secondary);
+    @include font($secondary-font,$font-size:pxToRem(16),$font-weight:700,$line-height:24px);
+    &:hover{
+        @include color($background:$background-lightmode,$color:$active-element-color);
+        border: 2px solid $text-color-extra;
+        scale: 0.99;
+    }
+}
