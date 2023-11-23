@@ -1,0 +1,6 @@
+ <each loop="item in {{ list }}">
+    <div class="text-block">
+        <p class="text-block-fisttext">{{ item.textfirst }}<sup>{{ item.textfirstchild }}</sup><sub>{{ item.textfirstchildtwo }}</sub></p>
+        <button class="text-block-secondtext">{{ item.textsecond }}</button>
+    </div>
+</each>
