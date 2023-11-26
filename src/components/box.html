@@ -21,9 +21,9 @@
             </div>
             </div>
             <picture class="image">
-                <source class="image__img" media="(min-width:1200px)" srcset="../assets/img/{{ item.imageLink1 }}.png" alt="{{ item.imageDesc1 }}"/>
+                <img class="image__img" src="../assets/img/{{ item.imageLink1 }}.png" alt="{{ item.imageDesc1 }}"/>
                 <source class="image__img" media="(min-width:429px)" srcset="../assets/img/{{ item.imageLink2 }}.png" alt="{{ item.imageDesc2 }}"/>
-                <img class="image__img" src="../assets/img/{{ item.imageLink3 }}.png" alt="{{ item.imageDesc3 }}" />
+                <source class="image__img" media="screen and (min-width:1200px)" srcset="../assets/img/{{ item.imageLink3 }}.png" alt="{{ item.imageDesc3 }}"/>
             </picture>
         </article>
     </each>
