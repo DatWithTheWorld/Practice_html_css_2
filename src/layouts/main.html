@@ -1,0 +1,113 @@
+
+<main class="main-container">
+    <!--Start of section banner -->
+    <section class="banner-list">
+        <include src="./components/banner.html" locals='{ 
+            "list":["rotashow","waves","rotashow","travelers","goldlines"]
+        }'>
+            
+        </include>
+    </section>
+    <!--End of section banner-->
+    <!--Start of section together-->
+    <section class="together">
+        <div class="together__box">
+            <div class="together__box__color-top"></div>
+            <div class="together__box__color-bottom"></div>
+            <include src="./components/box.html" locals='{
+                "list":[{
+                "firstLine":"RISK-FREE 30 DAY TRIAL",
+                "secondaryLine":"Keeping it all together",
+                "secondaryLines":"Keeping it all together",
+                "thirdLine":"Just invite your team, Solo does all the heavy-lifting.",
+                "buttonFirst":"Try it free",
+                "buttonSecondaryLink":"ic-triangleplay",
+                "buttonSecondary":"Schedule a demo",
+                "imageLink1":"pic-keepallintgt-Mobile",
+                "imageDesc1":"together",
+                "imageLink2":"pic-keepalintgt-Tablet",
+                "imageDesc2":"together",
+                "imageLink3":"pic-keepallintgt-Desktop",
+                "imageDesc3":"together"
+        }]
+               }'>
+            
+          </include>
+        </div>
+        <div class="together__content">
+            <include src="./components/text.html" locals='{
+                "list":[{"textfirst":"100","textfirstchild":"+","textfirstchildtwo":"+","textsecond":"Countries supported"},
+                {"textfirst":"28","textfirstchild":"m","textfirstchildtwo":"m","textsecond":"Downloads on App Store"},
+                {"textfirst":"16","textfirstchild":"m","textfirstchildtwo":"m","textsecond":"Verified Users"}]
+            }'>
+                
+            </include>
+        </div>
+    </section>
+    <!--End of section together-->
+    <!-- Start of section HW-->
+    <section class="HW">
+        <p class="HW__first-title">INSTANT SETUP</p>
+        <p class="HW__second-title">Fast, simple & effortless.</p>
+        <div class="HW__icon">
+            <include src="./components/step.html" locals='{
+                "list":[{"iconlink":"devices","iconbuttonstep":"Step 1","iconcontentstep":"Download the app"},
+                {"iconlink":"cloud","iconbuttonstep":"Step 2","iconcontentstep":"Invite teammates"},
+                {"iconlink":"word-connection","iconbuttonstep":"Step 3","iconcontentstep":"Create Workspace"},
+                {"iconlink":"bussiness-product","iconbuttonstep":"Step 4","iconcontentstep":"Track performance"}]
+            }'>
+                
+            </include>
+        </div>
+        <div class="HW__image">
+            <picture class="HW__image-big">
+                <source  media="(min-width:429px)" srcset="../assets/img/pic-package-Tablet.png">
+                <source media="(min-width:1200px)" srcset="../assets/img/pic-package-Desktop.png">
+                <img src="../assets/img/pic-package-Mobile.png" alt="Picture package">
+            </picture>
+            <figure class="HW__image-small">
+                <img src="../assets/icon/ic-circle-gradient.svg" alt="">
+            </figure>
+        </div>
+    </section>
+    <!--End of section HW-->
+    <!--Start of section feature-->
+    <section class="feature">
+         <div class="feature__content">
+            <p class="feature__content-firstline">AMAZING FEATURES</p>
+            <p class="feature__content-secondline">See what you can do in one app</p>
+         </div>
+         <div class="feature__image">
+            <include src="./components/feature.html" locals='{
+                "list":[{"linkimage":"fake-ui-01","linkicon":"cursor-3d","firsttitle":"Stay focused whenever, wherever","secondtitle":"We`re a growing family of 382,081 designers and makers from around the world","buttoncontent":"Watch how it work"},
+                {"linkimage":"fake-ui-02","linkicon":"speechbuble","firsttitle":"Share files at the right time","secondtitle":"We`re a growing family of 382,081 designers and makers from around the world","buttoncontent":"Get Solo Desktop"},
+                {"linkimage":"fake-ui-03","linkicon":"plane-3d","firsttitle":"Collaborate from anywhere","secondtitle":"We`re a growing family of 382,081 designers and makers from around the world","buttoncontent":"Schedule a demo"}]
+            }'>
+                
+            </include>
+         </div>
+    </section>
+    <!--End of section feature-->
+    <section class="history">
+        <div class="history__background">
+            <div class="history__background__linear"></div>
+            <include src="./components/box.html" locals='{
+                "list":[{
+                "firstLine":"EASILY FIND WHAT YOU’RE LOOKING FOR",
+                "secondaryLine":"History you can see & search",
+                "secondaryLines":"History you can see & search",
+                "thirdLine":"We\"re a growing family of 382,081 designers and makers from around the world",
+                "buttonFirst":"Try it free",
+                "buttonSecondaryLink":"ic-triangleplay",
+                "buttonSecondary":"Learn more",
+                "imageLink1":"pic-storage-cloud-Mobile",
+                "imageDesc1":"cloud",
+                "imageLink2":"pic-storage-cloud-Tablet",
+                "imageDesc2":"cloud",
+                "imageLink3":"pic-storage-cloud-Desktop",
+                "imageDesc3":"cloud"
+        }]
+               }'>
+        </div>
+    </section>
+</main>
