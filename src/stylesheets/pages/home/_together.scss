@@ -5,6 +5,7 @@
     padding-top: 30%;
     position: relative;
     z-index: 0;
+    overflow: hidden;
     @include flex($direction:column,$align:center,$justify:center);
     @include desktop{
         padding-top: 10%;
