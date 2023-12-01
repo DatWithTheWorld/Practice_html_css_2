@@ -1,0 +1,51 @@
+<!--Start of footer-->
+<footer class="footer">
+    <!--Start of footer top-->
+    <div class="footer__top">
+        <div class="footer__top__title">
+            <div class="footer__top__title__logo">
+                <figure class="footer__top__title__logo-item">
+                    <img src="../assets/img/pic-symbol.png" alt="logo">
+                    <figcaption>SoLo<span>.</span></figcaption>
+                </figure>
+            </div>
+            <p class="footer__top__title-main">
+                Join millions of people who organize work and life with Solo App.
+            </p>
+        </div>
+        <div class="footer__top__picture">
+            <figure>
+                <img src="../assets/img/pic-google-play.png" alt="google play">
+            </figure>
+            <figure>
+                <img src="../assets/img/pic-app-store.png" alt="appstore">
+            </figure>
+        </div>
+        <nav class="nav-container">
+            <ul>
+                <include src="./components/navList.html" locals='{
+                    "classList":"nav__item",
+                    "classLink":"nav__item-link",
+                    "list":["Download","Pricing","Features","About us","Contact"]
+                }'>
+                    
+                </include>
+            </ul>
+        </nav>
+    </div>
+   <!--End of footer top-->
+   <!--Start of footer bottom-->
+   <div class="footer__bottom">
+    <p class="footer__bottom-title">
+        © Solo Inc. Designed by UI8 Team
+    </p>
+    <div class="footer__bottom-icon">
+        <include src="./components/star.html" locals='{
+            "list":["facebook","twitter","instagram"]
+        }'>
+            
+        </include>
+    </div>
+   </div>
+</footer>
+<!--End of footer-->
