@@ -1,0 +1,52 @@
+@use "../../abstracts/" as *;
+
+.comment{
+    width: 100%;
+    margin-top: 10%;
+    @include flex($direction:column,$justify:center,$align:center);
+    gap: 30px;
+    text-align: center;
+    @include desktop{
+        gap: 50px;
+    }
+    &__title{
+       @include font($font-family:$third-font,$font-size:pxToRem(32),$font-weight:600,$line-height:40px);
+       @include color($color:$text-color-secondary);
+       @include tablet{
+        @include font($font-size:pxToRem(40));
+        width: 60%;
+       }
+       @include desktop{
+        @include font($font-size:pxToRem(48));
+        width: 60%;
+       }
+    }
+    &__block{
+        width: 100%;
+        @include flex($justify:space-between,$align:center);
+        text-align: center;
+        overflow: scroll;
+        gap: 10px;
+        @include tablet{
+            gap: 30px;
+        }
+        @include desktop{
+            .comments:nth-child(1){
+                .comments__para{
+                    width: 50%;
+                }
+            }
+        }
+        &::-webkit-scrollbar{
+            height: 1px;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: black;
+        }
+    
+    }
+    &__arrow{
+        @include flex($gap:30px);
+    }
+   
+}
