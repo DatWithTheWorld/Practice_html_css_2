@@ -17,7 +17,6 @@
         z-index: 0;
         padding: 8%;
         width: 100%;
-        overflow: hidden;
         @include color($background:$background-box);
         border-radius: 30px;
         @include desktop{
