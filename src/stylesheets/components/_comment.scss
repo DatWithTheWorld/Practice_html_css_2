@@ -1,0 +1,56 @@
+@use "../abstracts/" as *;
+
+.comments{
+    flex: 0 0 100%;
+    @include flex($direction:column,$justify:center,$align:center);
+    text-align: center;
+    gap: 40px;
+    @include tablet{
+        flex: 1;
+        
+    }
+    @include desktop{
+        flex: 1
+        ;
+    }
+    &__div-star{
+        width: 100%;
+        @include flex($justify:center);
+        gap: 10px;
+    }
+    &__para{
+        width: 60%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 7;
+        @include font($font-family:$third-font,$font-size:pxToRem(20),$font-weight:600,$line-height:24px);
+        @include color($color:$text-color-secondary);
+        @include tablet{
+            width: 80%;
+        }
+    }
+    &__titles{
+        @include flex($direction:column,$gap:15px);
+        .comments__person-name{
+            @include font($font-family:$third-font,$font-size:pxToRem(18),$font-weight:600,$line-height:24px);
+            @include color($color:$text-color-secondary);
+        }
+
+    }
+    .comments__source{
+        width: 100%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        @include font($font-family:$secondary-font,$font-size:pxToRem(16),$font-weight:500,$line-height:24px);
+        @include color($color:$text-color-primary);
+        opacity: 0.6;
+    }
+    
+}
+
+

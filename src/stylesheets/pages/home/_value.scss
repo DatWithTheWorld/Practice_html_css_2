@@ -1,0 +1,31 @@
+@use "../../abstracts/" as *;
+
+.value{
+    width: 100%;
+    @include flex();
+    gap: 30px;
+    overflow: scroll;
+    padding-top: 20%;
+    @include desktop{
+        padding-top: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        overflow: hidden;
+    }
+    @include tablet{
+        width: 100%;
+        padding-top: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        overflow: hidden;
+        gap: 11px;
+    }
+    &::-webkit-scrollbar{
+        height: 1px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: black;
+    }
+}
