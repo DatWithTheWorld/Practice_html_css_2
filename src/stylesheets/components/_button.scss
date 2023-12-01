@@ -11,6 +11,6 @@
     &:hover{
         @include color($background:$background-lightmode,$color:$active-element-color);
         border: 2px solid $text-color-extra;
-        scale: 0.99;
+        transform:scale(0.99);
     }
 }
