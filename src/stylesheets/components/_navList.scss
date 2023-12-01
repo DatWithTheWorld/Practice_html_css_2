@@ -2,12 +2,15 @@
 
 .nav-container{
     ul{
-        @include flex();
+        @include flex($justify:space-between);
         .nav__item{
             .nav__item-link{
                 @include font($font-family:$secondary-font,$font-size:pxToRem(16),$font-weight:600,$line-height:24px);
                 @include color($color:$text-color-primary);
                 text-decoration: none;
+                &:hover{
+                    color: $active-element-color;
+                }
             }
         }
     }
