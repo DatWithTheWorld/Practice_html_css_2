@@ -88,7 +88,7 @@
     .image{
         width: 100%;
         margin-left: 0%;
-        img:nth-child(1), img:nth-child(2){
+        img:nth-child(3), img:nth-child(2){
             display: none;
         }
         img{
@@ -100,10 +100,10 @@
             img{
                 width: 100%;
             }
-            img:nth-child(1), img:nth-child(2){
+            img:nth-child(1), img:nth-child(3){
                 display: none;
             }
-            img:nth-child(3){
+            img:nth-child(2){
                 display: block;
             }
         }
@@ -113,10 +113,11 @@
             img{
                 width: 100%;
             }
-            img:nth-child(3), img:nth-child(2){
+            img:nth-child(1), img:nth-child(2){
                 display: none;
             }
-            img:nth-child(1){
+            img:nth-child(3){
+
                 display: block;
             }
         }
