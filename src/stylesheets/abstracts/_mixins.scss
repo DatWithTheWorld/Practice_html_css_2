@@ -86,7 +86,7 @@ font-style: normal;
     background-size: cover;
   }
   @mixin tablet {
-    @media (min-width:$mobiles) and (max-width: $tablet) {
+    @media (min-width:$small) and (max-width: $tablet) {
       @content;
     }
   }
