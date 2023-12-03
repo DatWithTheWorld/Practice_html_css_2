@@ -20,3 +20,10 @@ body {
     margin: 0 auto;
     min-width: 320px;
 }
+::-webkit-scrollbar{
+    width: 2px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $text-color-secondary;
+}
+

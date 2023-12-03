@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.icon{
+    width: 100%;
+    @include color($background:$background-box);
+    @include flex($align:center,$justify:center);
+    border-radius: 20px;
+    figure{
+        @include flex($align:center,$justify:center);
+        width: 90px;
+        height: 90px;
+        @include tablet{
+            width: 130px;
+            height: 130px;
+        }
+        @include desktop{
+            width: 130px;
+            height: 130px;
+        }
+        img{
+            width: 40%;
+            height: 40%;
+        }
+    }
+}
