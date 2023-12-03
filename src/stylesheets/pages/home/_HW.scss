@@ -20,7 +20,7 @@
     @include font($font-family:$third-font,$font-size:pxToRem(32),$line-height:40px,$font-weight:600);
     @include color($color:$text-color-secondary);
     @include tablet{
-        @include font($font-size:pxToRem(40));
+        @include font($font-size:pxToRem(40),$line-height:1.2);
     }
     @include desktop{
         @include font($font-size:pxToRem(48));
