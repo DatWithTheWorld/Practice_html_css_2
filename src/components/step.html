@@ -1,0 +1,14 @@
+<each loop="item in {{ list }}">
+     <div class="step">
+        <figure class="step__icon">
+            <img src="../assets/icon/ic-{{ item.iconlink }}.svg" alt="">
+        </figure>
+        <button class="step__button">
+            {{ item.iconbuttonstep }}
+        </button>
+        <p class="step__content">
+            {{ item.iconcontentstep }}
+        </p>
+     </div>
+</each>
+

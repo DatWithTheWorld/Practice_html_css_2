@@ -1,0 +1,138 @@
+@use "../../abstracts/"as *;
+
+.together{
+    width: 100%;
+    padding-top: 30%;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    @include flex($direction:column,$align:center,$justify:center);
+    @include desktop{
+        padding-top: 10%;
+    }
+    @include tablet{
+        padding-top: 10%;
+    }
+    &__box{
+        z-index: 10;
+        padding: 5%;
+        @include color($background:$background-box);
+        border-radius: 25px;
+        position: relative;
+        width: 110%;
+        @include desktop{
+            width: 100%;
+            padding: 0 5%;
+        }
+        &__color-top,&__color-bottom{
+             position: absolute;
+             width: 20%;
+             height: 40%; 
+             background-color: black;
+             opacity: 0.6;
+             background: linear-gradient(135deg, #AE80DC 1.17%, #DC83C3 31.88%, #8084DC 65.46%);
+             mix-blend-mode: overlay;
+             filter: blur(139.13043212890625px);
+        }
+        &__color-top{
+            top: 30%;
+            left: 0%;
+            border-radius: 0 0 50% 0;
+        }
+        &__color-bottom{
+            bottom: 0;
+            right: 0;
+            border-radius: 50% 0 0 0;
+        }
+        
+        .box-item{
+            @include tablet{
+                @include flex($direction:row-reverse);
+                gap: 50px;
+            }
+            @include desktop{
+                @include flex($direction:row-reverse);
+                gap: 100px;
+            }
+            .content{
+                &__area{
+                    .content__first__line{
+                        display: none;
+                    }
+                    .content__secondary__line-h1{
+                        display: none;
+                    }
+                }
+                &__button{
+                    .btn{
+                        display: none;
+                    }
+                    .btn__no__color{
+                        figure{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .image{
+                width: 100%;
+                transform: translateY(30%);
+                img{
+                    width: 100%;
+                }
+                @include tablet{
+                    width: 60%;
+                    transform: translateY(-15%);
+                }
+                @include desktop{
+                    width: 60%;
+                    transform: translateY(-15%);
+                }
+            }
+        }
+    }
+    &__content{
+        position:   relative;
+        width:110%;
+        background: linear-gradient(90deg, #FEA989 0.02%, #99B4DB 98.92%);
+        border-radius:  0 0 25px 25px; 
+        transform:  translateY(-5%);
+        z-index: 1;
+        padding-top: 20%;
+        @include tablet{
+            @include flex($direction:row,$align:space-between);
+            padding-top: 5%;
+        }
+        @include desktop{
+            width: 98%;
+            @include flex($direction:row);
+            padding-top: 5%;
+        }
+        @include flex($direction:column,$align:center,$justify:center);
+        .text-block:nth-child(1),.text-block:nth-child(2){
+            border-bottom: 2px solid rgba(255, 255, 255, 0.15) ;
+            @include desktop{
+                border-bottom: none;
+                border-right:  2px solid rgba(255, 255, 255, 0.15) ;;
+            }
+            @include tablet{
+                border-bottom: none;
+                border-right:  2px solid rgba(255, 255, 255, 0.15) ;;
+            }
+        }
+        .text-block:nth-child(1){
+         .text-block-fisttext{
+            sup{
+                display: none;
+            }
+         }
+        }
+        .text-block:nth-child(2),.text-block:nth-child(3){
+            .text-block-fisttext{
+                sub{
+                    display: none;
+                }
+            }
+        }
+    }
+}

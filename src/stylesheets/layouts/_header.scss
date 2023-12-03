@@ -1,3 +1,4 @@
+
 @use "../abstracts/" as *;
 
 .header-container {
@@ -66,6 +67,7 @@
     @include flex($direction:column,$align:center,$justify:center);
     &__content{
         display: none;
+        margin-top: 5%;
         @include font($font-family:$secondary-font,$font-weight:500,$line-height:25px,$font-size:pxToRem(16));
         @include color($color:$text-color-primary);
         @include tablet{
