@@ -1,0 +1,21 @@
+@use "../abstracts/"as *;
+
+.banner-list{
+    padding:5% 0;
+    width: 100%;
+    @include flex($align:center,$justify:space-between);
+    display: none;
+    .banner__icon-child{
+        img{
+            width: 100%;
+        }
+    }
+    @include tablet{
+        @include flex();
+        width: 100%;
+    }
+    @include desktop{
+        @include flex();
+        width: 100%;
+    }
+}

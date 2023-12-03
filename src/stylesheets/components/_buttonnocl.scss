@@ -13,4 +13,10 @@
     &:hover{
         @include color($background:$active-element-color);
     }
+    @include tablet{
+        border-radius: 20px;
+    }
+    @include desktop{
+        border-radius: 20px;
+    }
 }

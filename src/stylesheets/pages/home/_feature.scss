@@ -1,0 +1,77 @@
+@use "../../abstracts/"as *;
+
+.feature{
+    @include flex($direction:column,$justify:center,$align:center);
+    gap: 20px;
+    text-align: center;
+    padding: 10% 0 0 0;
+    width: 100%;
+    @include tablet{
+        gap: 80px;
+    }
+    @include desktop{
+        padding-top: 3%;
+        gap: 80px;
+    }
+    &__content{
+        width: 100%;
+        @include flex($direction:column,$align:center);
+        gap: 20px;
+      &-firstline{
+        @include font($font-family:$secondary-font,$font-size:pxToRem(12),$font-weight:800,$line-height:16px);
+        @include color($color:$text-color-extra);
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+      }
+      &-secondline{
+        @include font($font-family:$third-font,$font-size:pxToRem(32),$font-weight:600,$line-height:40px);
+        @include color($color:$text-color-secondary);
+        @include tablet{
+            @include font($font-size:pxToRem(40));
+            width: 65%;
+        }
+        @include desktop{
+            @include font($font-size:pxToRem(48));
+            width: 40%;
+        }
+      }
+    }
+    &__image{
+        width: 100%;
+      @include flex($direction:column);
+      gap: 40px;
+      .featurecp:nth-child(1){
+          .featurecp__list{
+            .listcr{
+                &-child:nth-child(1){
+                    @include color($background:$active-element-color);
+                    width: 0.5rem;
+                    height: 0.5rem;
+                }
+            }
+        }
+      }
+      .featurecp:nth-child(2){
+        .featurecp__list{
+          .listcr{
+              &-child:nth-child(2){
+                  @include color($background:$active-element-color);
+                  width: 0.5rem;
+                  height: 0.5rem;
+              }
+          }
+      }
+    }
+    .featurecp:nth-child(3){
+        .featurecp__list{
+          .listcr{
+              &-child:nth-child(3){
+                  @include color($background:$active-element-color);
+                  width: 0.5rem;
+                  height: 0.5rem;
+              }
+          }
+      }
+    }
+    }
+}

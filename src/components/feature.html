@@ -1,0 +1,26 @@
+<each loop="item in {{ list }}">
+    <div class="featurecp">
+        <picture class="featurecp__image">
+            <source media="(min-width:1200px)" srcset="../assets/img/pic-{{ item.linkimage }}-Desktop.png" />
+            <source media="(min-width:429px)" srcset="../assets/img/pic-{{ item.linkimage }}-Tablet.png"/>
+            <img src="../assets/img/pic-{{item.linkimage }}-Mobile.png" alt="Chat"> 
+        </picture>
+        <div class="featurecp__content">
+            <figure class="featurecp__content__image">
+                <img src="../assets/icon/ic-{{ item.linkicon }}.svg" alt="icon">
+            </figure>
+            <p class="featurecp__content-firsttitle">{{ item.firsttitle }}</p>
+            <p class="featurecp__content-secondtitle">{{ item.secondtitle }}</p>
+            <include src="./components/buttonnocl.html" locals='{
+                "list":[{"linkIcon":"ic-logo","linkDesc":"Logo","content":"{{ item.buttoncontent }}"}]
+            }'>
+                
+            </include>
+        </div>
+        <div class="featurecp__list">
+            <include src="./components/listcr.html" locals='{}'>
+                
+            </include>
+        </div>
+    </div>
+</each>
