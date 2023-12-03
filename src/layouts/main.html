@@ -206,7 +206,39 @@
     </section>
     <!--End of section remind-->
     <section class="development">
-        <div class="development__box"></div>
-        <div class="development__content"></div>
+        <div class="development__div"></div>
+        <div class="development__pack">
+             <div class="development__pack__linear"></div>
+            <div class="development__pack__box">
+                <include src="./components/box.html" locals='{
+                    "list":[{
+                    "firstLine":" DEEP FOCUS & MULTITASKING",
+                    "secondaryLine":"Keeping it all together",
+                    "secondaryLines":"Increase Productivity",
+                    "thirdLine":"We\"re a growing family of 382,081 designers and makers from around the world",
+                    "buttonFirst":"Try it free",
+                    "buttonSecondaryLink":"ic-triangleplay",
+                    "buttonSecondary":"Sign up now",
+                    "imageLink1":"pic-feature-sub-Mobile",
+                    "imageDesc1":"development",
+                    "imageLink2":"pic-feature-sub-Tablet",
+                    "imageDesc2":"development",
+                    "imageLink3":"pic-feature-sub-Desktop",
+                    "imageDesc3":"development"
+            }]
+                   }'>
+                
+              </include>
+            </div>
+            <div class="development__pack__content">
+                <include src="./components/para.html" locals='{
+                    "list":[{"linkimage":"pointer-up-down","firstcontent":"Use a simple way"},
+                    {"linkimage":"play-button","firstcontent":"A productivity platform"},
+                    {"linkimage":"clock","firstcontent":"Save your time"}]
+                }'>
+                    
+                </include>
+            </div>
+        </div>
     </section>
 </main>
