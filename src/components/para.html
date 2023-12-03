@@ -1,0 +1,11 @@
+<each loop="item in {{ list }}">
+   <div class="para">
+    <figure class="para__left">
+       <img src="../assets/icon/ic-{{ item.linkimage }}.svg" alt="">
+    </figure>
+    <div class="para__right">
+        <p class="para__right__first-content">{{ item.firstcontent }}</p>
+        <p class="para__right__second-content">We're a growing family of 382,081 designers and makers from around the world</p>
+    </div>
+   </div>
+</each>

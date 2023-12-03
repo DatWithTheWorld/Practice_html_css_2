@@ -1,0 +1,92 @@
+
+@use "../abstracts/" as *;
+
+.header-container {
+    width: 100%;
+  .header-top{
+    width: 100%;
+    padding: 5% 0;
+    @include desktop{
+        padding: 4% 0 0% 0;
+    }
+    @include tablet{
+        padding: 2% 0;
+    }
+    @include flex($justify:space-between,$align:center);
+    &__logo{
+        &-item{
+            @include flex($align:center);
+            figcaption{
+                @include font($font-size:pxToRem(30),$line-height:40px,$font-weight:700);
+                   margin-left: 5%;
+                   @include tablet{
+                    @include font($font-size:pxToRem(36));
+                   }
+                   @include desktop{
+                    @include font($font-size:pxToRem(36));
+                   }
+                   @include color($color:$text-color-secondary);
+                   span{
+                    @include color($color:$active-element-color);
+                   }
+            }
+        }
+    }
+    nav{
+        display: none;
+        @include desktop{
+            display: block;
+            width: 40%;
+        }
+    }
+    &__button{
+        display: none;
+        @include desktop{
+            @include flex($justify:space-between);
+            width: 15%;
+        }
+        &-s{
+            @include color($background:$background-darkmode,$color:$text-color-primary);
+            @include font($font-family:$secondary-font,$font-size:pxToRem(16),$line-height:24px,$font-weight:700);
+            border: none;
+            padding: 8%;
+            border-radius: 16px;
+            &:hover{
+                @include color($background:$active-element-color,$color:$text-color-secondary);
+            }
+        }
+    }
+    &__menu{
+        @include desktop{
+            display: none;
+        }
+    }
+  }
+  .header-bottom{
+    width: 100%;
+    @include flex($direction:column,$align:center,$justify:center);
+    &__content{
+        display: none;
+        margin-top: 5%;
+        @include font($font-family:$secondary-font,$font-weight:500,$line-height:25px,$font-size:pxToRem(16));
+        @include color($color:$text-color-primary);
+        @include tablet{
+            
+            display: block;
+        }
+        @include desktop{
+            display: block;
+        }
+    }
+    &__box{
+        width: 100%;
+        .box-item{
+            .content{
+                &__secondary__line-h3{
+                    display: none;
+                }
+            }
+        }
+    }
+  }
+}
