@@ -22,4 +22,10 @@
         overflow: hidden;
         gap: 11px;
     }
+    &::-webkit-scrollbar{
+        height: 1px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $text-color-primary;
+    }
 }
