@@ -5,6 +5,8 @@
     width: 100%;
     text-align: center;
     padding: 10% 0; 
+    position: relative;
+    z-index: 1;
     @include flex($direction:column,$justify:center,$align:center);
     @include tablet{
             @include flex($direction:row,$justify:center,$align:center);
@@ -88,38 +90,18 @@
     .image{
         width: 100%;
         margin-left: 0%;
-        img:nth-child(3), img:nth-child(2){
-            display: none;
-        }
-        img{
-            width: 109%;
+        z-index: 3;
+        transform: translate(9%,25%);
+        img,source{
+            width: 100%;
         }
         @include tablet{
             width: 60%;
             transform: translateX(17.5%);
-            img{
-                width: 100%;
-            }
-            img:nth-child(1), img:nth-child(3){
-                display: none;
-            }
-            img:nth-child(2){
-                display: block;
-            }
         }
         @include desktop{
+            transform: translateX(14%);
             width: 80%;
-            transform: translateX(15.5%);
-            img{
-                width: 100%;
-            }
-            img:nth-child(1), img:nth-child(2){
-                display: none;
-            }
-            img:nth-child(3){
-
-                display: block;
-            }
         }
     }
 }

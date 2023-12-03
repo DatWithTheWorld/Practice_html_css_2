@@ -1,5 +1,6 @@
 
 <main class="main-container">
+    <!--Start of section banner -->
     <section class="banner-list">
         <include src="./components/banner.html" locals='{ 
             "list":["rotashow","waves","rotashow","travelers","goldlines"]
@@ -7,8 +8,12 @@
             
         </include>
     </section>
+    <!--End of section banner-->
+    <!--Start of section together-->
     <section class="together">
         <div class="together__box">
+            <div class="together__box__color-top"></div>
+            <div class="together__box__color-bottom"></div>
             <include src="./components/box.html" locals='{
                 "list":[{
                 "firstLine":"RISK-FREE 30 DAY TRIAL",
@@ -37,6 +42,32 @@
             }'>
                 
             </include>
+        </div>
+    </section>
+    <!--End of section together-->
+    <!-- Start of section HW-->
+    <section class="HW">
+        <p class="HW__first-title">INSTANT SETUP</p>
+        <p class="HW__second-title">Fast, simple & effortless.</p>
+        <div class="HW__icon">
+            <include src="./components/step.html" locals='{
+                "list":[{"iconlink":"devices","iconbuttonstep":"Step 1","iconcontentstep":"Download the app"},
+                {"iconlink":"cloud","iconbuttonstep":"Step 2","iconcontentstep":"Invite teammates"},
+                {"iconlink":"word-connection","iconbuttonstep":"Step 3","iconcontentstep":"Create Workspace"},
+                {"iconlink":"bussiness-product","iconbuttonstep":"Step 4","iconcontentstep":"Track performance"}]
+            }'>
+                
+            </include>
+        </div>
+        <div class="HW__image">
+            <picture class="HW__image-big">
+                <source  media="(min-width:429px)" srcset="../assets/img/pic-package-Tablet.png">
+                <source media="(min-width:1200px)" srcset="../assets/img/pic-package-Desktop.png">
+                <img src="../assets/img/pic-package-Mobile.png" alt="Picture package">
+            </picture>
+            <figure class="HW__image-small">
+                <img src="../assets/icon/ic-circle-gradient.svg" alt="">
+            </figure>
         </div>
     </section>
 </main>

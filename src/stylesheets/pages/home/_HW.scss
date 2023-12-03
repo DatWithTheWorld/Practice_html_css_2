@@ -1,0 +1,88 @@
+@use "../../abstracts/"as *;
+
+.HW{
+  width: 100%;
+  padding: 5% 0 0 0 ;
+  @include flex($direction:column,$align:center,$justify:center);
+  text-align: center;
+  gap: 10px;
+  @include tablet{
+    gap: 20px;
+  }
+  @include desktop{
+    gap: 50px;
+  }
+  &__first-title{
+    @include font($font-family:$secondary-font,$font-size:pxToRem(12),$font-weight:800,$line-height:16px);
+    @include color($color:$text-color-extra);
+  }
+  &__second-title{
+    @include font($font-family:$third-font,$font-size:pxToRem(32),$line-height:40px,$font-weight:600);
+    @include color($color:$text-color-secondary);
+    @include tablet{
+        @include font($font-size:pxToRem(40));
+    }
+    @include desktop{
+        @include font($font-size:pxToRem(48));
+    }
+  }
+  &__icon{
+    width: 100%;
+    @include tablet{
+        @include flex($direction:row,$justify:center);
+        width: 100%;
+      }
+      @include desktop{
+        @include flex($direction:row,$justify:center);
+        width: 100%;
+      }
+    .step{
+        width: 100%;
+        position: relative;
+    }
+    .step:nth-child(1)::after,.step:nth-child(2)::after,.step:nth-child(3)::after{
+        content: "";
+        position: absolute;
+        width: 80%;
+        border-radius: 2px;
+        bottom: 0;
+        opacity: 0.1;
+        border: 2px solid $text-color-extra;
+        @include tablet{
+            height: 100%;
+            right: 0;
+            width: 3px;
+            @include color($background:$text-color-extra);
+        }
+        @include desktop{
+            height: 100%;
+            right: 0;
+            width: 3px;
+            @include color($background:$text-color-extra);
+        }
+    }
+  }
+  &__image{
+    margin-top: 8%;
+    width: 100%;
+    @include tablet{
+        width: 70%;
+    }
+    @include desktop{
+        width: 50%;
+    }
+    picture{
+        width: 100%;
+        img,source{
+            width: 100%;
+        }
+    }
+    &-small{
+        display: none;
+        @include desktop{
+            display: block;
+        }
+    }
+    
+  }
+}
