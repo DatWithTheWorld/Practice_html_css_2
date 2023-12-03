@@ -26,6 +26,6 @@
         height: 1px;
     }
     &::-webkit-scrollbar-thumb{
-        background-color: black;
+        background-color: $text-color-primary;
     }
 }

@@ -1,0 +1,63 @@
+@use "../../abstracts/"as *;
+
+.busy{
+    width: 100%;
+    padding-top: 20%;
+    position: relative;
+    z-index: 0;
+    @include flex($direction:column,$align:center,$justify:center);
+    @include desktop{
+        padding-top: 10%;
+    }
+    @include tablet{
+        padding-top: 10%;
+    }
+    .box-item{
+        @include tablet{
+            @include flex($direction:row-reverse);
+            gap: 50px;
+        }
+        @include desktop{
+            @include flex($direction:row-reverse);
+            gap: 100px;
+           
+        }
+        .content{
+           
+            @include flex($direction:column,$align:flex-start);
+            &__area{
+                @include flex($direction:column,$align:flex-start,$justify:flex-start);
+            text-align: left;
+                .content__secondary__line-h1{
+                    display: none;
+                }
+            }
+            &__button{
+                @include flex($align:flex-start);
+                .btn{
+                    display: none;
+                }
+                .btn__no__color{
+                    figure{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .image{
+            width: 100%;
+            transform: translateY(10%);
+            img{
+                width: 100%;
+            }
+            @include tablet{
+                width: 60%;
+                transform: translateY(0%);
+            }
+            @include desktop{
+                width: 60%;
+                transform: translateY(0%);
+            }
+        }
+    }
+}

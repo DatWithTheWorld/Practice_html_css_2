@@ -1,0 +1,45 @@
+@use "../abstracts/"as *;
+
+.text-block{
+    z-index: 10;
+    width: 100%;
+    min-width: fit-content;
+    @include flex($direction:column,$align:center,$justify:space-between);
+    gap: 10px;
+    &-fisttext{
+        @include font($font-family:$third-font,$font-size:pxToRem(56),$font-weight:600,$line-height:64px);
+        @include tablet{
+            @include font($font-size:pxToRem(60));
+        }
+        @include desktop{
+            @include font($font-size:pxToRem(72));
+        }
+        sub, sup{
+            @include font($font-size:pxToRem(32));
+        }
+    }
+    &-secondtext{
+        text-align: center;
+       @include color($background:$text-color-secondary,$color:$text-color-primary  );
+       @include font($font-family:$secondary-font,$font-size:pxToRem(12),$font-weight:700,$line-height:24px);
+       padding: 5% 8%;
+       opacity: 0.75;
+       width: 90%;
+       box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.15);
+       border-radius: 90px;
+       border: none;
+       text-overflow: ellipsis;
+       overflow: hidden;
+       white-space: nowrap;
+    }
+    &-secondtext:hover{
+        @include color($background:$active-element-color,$color:$text-color-secondary);
+    }
+    padding: 10%;
+    @include desktop{
+        padding: 5%;
+    }
+    @include tablet{
+        padding: 3%;
+    }
+}
